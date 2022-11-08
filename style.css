@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+
+@keyframes luzes {
+    from {
+       outline: 0 solid rgb(44, 44, 211);
+    }
+    to {
+       outline: 10px solid rgb(44, 44, 211);
+    }
+}
+
+/*********** CONFIGURAÇÕES GERAIS ***********/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: "Outfit";
+}
+
+.texto-meio, .data p, .criador{
+    color:  hsl(215, 51%, 70%);
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 320px;
+    min-width: 200px;
+
+    padding: 25px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+}
+
+/********* CONFIGURAÇÕES ESPECÍFICAS ********/
+
+.data-e-ethereum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.texto-meio {
+    font-weight: 300;
+    font-size: 19px;
+    margin-bottom: -1px;
+}
+
+.ethereum {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.ethereum p {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.data img {
+    margin-right: 5px;    
+}
+
+.criador span {
+    color: hsl(0, 0%, 100%);
+}
+
+/*********** RODAPÉ ************/
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer img {
+    outline: 1px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/**************** RESPONSIVIDADE *****************/
+@media only screen and (max-width: 390px) {
+    .container {
+        min-width: 100px;
+    }
+
+    .imagem img {
+        width: 100%;
+    }
+}
